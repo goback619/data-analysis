@@ -54,8 +54,8 @@ public class CodeGenerator {
         dsc.setUrl("jdbc:mysql://rm-bp1w9eizcqj030kc5o.mysql.rds.aliyuncs.com:3306/ding?useUnicode=true&characterEncoding=utf-8&autoReconnect=true&useSSL=false&allowMultiQueries=true");
         // dsc.setSchemaName("public");
         dsc.setDriverName("com.mysql.jdbc.Driver");
-        dsc.setUsername("ding");
-        dsc.setPassword("abcD1234");
+        dsc.setUsername("user");
+        dsc.setPassword("password");
         mpg.setDataSource(dsc);
 
         // 包配置
