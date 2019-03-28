@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.witown.location.mapper.WiMerchantLocationMapper">
+
+    <select id="selectByPage" parameterType="int" resultType="com.witown.location.entity.WiMerchantLocation">
+        select * from wi_merchant_location ORDER BY gmtCreated
+        limit #{current} , 20
+    </select>
+
+    <select id="total" resultType="int">
+      SELECT COUNT(1) FROM wi_num;
+    </select>
+
+    <select id="getId" parameterType="int" resultType="string">
+        SELECT id FROM wi_num limit #{current}, 20;
+    </select>
+</mapper>
